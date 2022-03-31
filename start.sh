@@ -6,7 +6,7 @@ else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /Masterolic
 fi
-cd /Dhanush 
+cd /Masterolic
 echo "Installing Requirements..."
 pip3 install -U -r requirements.txt
 echo "Starting Bot, Please Wait..."

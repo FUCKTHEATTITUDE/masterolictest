@@ -14,6 +14,7 @@ aiofiles
 requests
 pyshorteners
 bs4
+LOGGER
 psutil
 imdbpy
 youtube-search-python==1.4.6

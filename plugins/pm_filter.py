@@ -557,6 +557,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙎𝙤𝙪𝙧𝙘𝙚', callback_data='source'),
             InlineKeyboardButton('« 𝘽𝙖𝙘𝙠', callback_data='start'),
             InlineKeyboardButton('𝘼𝙗𝙤𝙪𝙩', callback_data='about')
+            ],[
+            InlineKeyboardButton('𝙇𝙤𝙘𝙠𝙨', callback_data='lock')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -654,6 +656,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.BUTTON_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "lock":
+        buttons = [[
+            InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.LOCK_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'

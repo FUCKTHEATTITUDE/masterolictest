@@ -13,6 +13,7 @@ aiohttp==3.7.4
 aiofiles
 requests
 pyshorteners
+cachetools==4.2.4; python_version >= "3.5" and python_version < "4.0"
 bs4
 LOGGER
 psutil

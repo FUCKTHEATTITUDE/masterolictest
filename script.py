@@ -30,6 +30,7 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 ➥ 𝘽𝙪𝙞𝙡𝙙 𝙎𝙩𝙖𝙩𝙪𝙨 : v2.0.1 [ Beta ]"""
 
     SOURCE_TXT = """<b>Source:</b>
+
 Dhanush is not a Open source project.
 
 𝖲𝖮𝖴𝖱𝖢𝖤 𝖢𝖮𝖣𝖤 ~ 𝖭𝖮𝖳 𝖠𝖵𝖠𝖨𝖫𝖠𝖡𝖫𝖤 𝖱𝖨𝖦𝖧𝖳 𝖭𝖮𝖶</b>
@@ -48,11 +49,13 @@ Dhanush is not a Open source project.
 - Filter is the feature were users can set automated replies for a particular keyword and Dingdi will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
+
 1. Dhamush should have admin privillage.
 2. Only admins can add filters in a chat.
 3. Alert buttons have a limit of 64 characters.
 
 <b>Commands and Usage:</b>
+
 • /filter - add a filter in chat.
 • /filters - list all the filters of a chat.
 • /del - delete a specific filter in chat.
@@ -64,6 +67,7 @@ Keep your members in check with warnings; stop them getting out of control!
 If you're looking for automated warnings, read about the blacklist module!
 
 <b>Admin Commands</b>:
+
 - /warn <reason>: Warn a user.
 - /dwarn <reason>: Warn a user by reply, and delete their message.
 - /swarn <reason>: Silently warn a user, and delete your message.
@@ -76,6 +80,7 @@ If you're looking for automated warnings, read about the blacklist module!
 - /setwarnlimit <number>: Set the number of warnings before users are punished.
 
 <b>Examples</b>
+
 - Warn a user.
 -> /warn @user For disobeying the rules"""
 
@@ -84,6 +89,7 @@ If you're looking for automated warnings, read about the blacklist module!
 - Dhanush Support both url and alert inline buttons.
 
 <b>NOTE:</b>
+
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
 2. Dhanush supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format.
@@ -110,13 +116,16 @@ You can also customise the contents of your message with contextual data. For ex
 - <code>{query}</code>: Any Message Text.
 
 <b>Example:</b>
+
 <b>- Save a filter using the mention.</b>
+
 -> <code>/filter test Hello {mention} This Is your Username : {username} And This Is your ID : {id}.</code>
 """
 
     AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
 <b>NOTE:</b>
+
 1. Make me the admin of your channel if it's private.
 2. Make sure that your channel does not contains camrips, porn and fake files.
 3. Forward the last message to me with quotes.
@@ -125,8 +134,11 @@ You can also customise the contents of your message with contextual data. For ex
     TORRENT_TXT = """Help: <b>Torrent Search</b>
 
 <b>Commands and Usage:</b>
+
 • /torrent or /tor <movie name>: Get Your Torrent Link From Various Resource.
+
 <b>NOTE:</b>
+
 • IMDb should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
@@ -137,10 +149,12 @@ You can also customise the contents of your message with contextual data. For ex
 - It helps to avoid spamming in groups.
 
 <b>NOTE:</b>
+
 1. Only admins can add a connection.
 2. Send <code>/connect</code> for connecting me to ur PM
 
 <b>Commands and Usage:</b>
+
  /connect  - connect a particular chat to your PM.
 • /disconnect  - disconnect from a chat.
 • /connections - list all your connections."""
@@ -148,8 +162,11 @@ You can also customise the contents of your message with contextual data. For ex
     TORRENT_TXT = """Help: <b>Torrent Search</b>
 
 <b>Commands and Usage:</b>
+
 • /torrent or /tor <movie name>: Get Your Torrent Link From Various Resource.
+
 <b>NOTE:</b>
+
 • IMDb should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
@@ -180,7 +197,15 @@ You can also customise the contents of your message with contextual data. For ex
 
 <b>Usages</b>
 𝖨𝖿 𝖸𝗈𝗎 𝖭𝖾𝖾𝖽 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 Use Commands 𝖳𝗈 𝖦𝖾𝗍 𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖽 (𝖱𝖾𝗉𝗅𝗒 𝖶𝗂𝗍𝗁 𝖲𝗍𝗂𝖼𝗄𝖾𝗋)</b>"""
-     
+   
+    REPORT_TXT = """➤ 𝐇𝐞𝐥𝐩: Rᴇᴘᴏʀᴛ ⚠️
+
+𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚛𝚎𝚙𝚘𝚛𝚝 𝚊 𝚖𝚎𝚜𝚜𝚊𝚐𝚎 𝚘𝚛 𝚊 𝚞𝚜𝚎𝚛 𝚝𝚘 𝚝𝚑𝚎 𝚊𝚍𝚖𝚒𝚗𝚜 𝚘𝚏 𝚝𝚑𝚎 𝚛𝚎𝚜𝚙𝚎𝚌𝚝𝚒𝚟𝚎 𝚐𝚛𝚘𝚞𝚙. 𝙳𝚘𝚗'𝚝 𝚖𝚒𝚜𝚞𝚜𝚎 𝚝𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍.
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞: 
+
+➪/report 𝗈𝗋 @admins - 𝖳𝗈 𝗋𝖾𝗉𝗈𝗋𝗍 𝖺 𝗎𝗌𝖾𝗋 𝗍𝗈 𝗍𝗁𝖾 𝖺𝖽𝗆𝗂𝗇𝗌 (𝗋𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺 𝗆𝖾𝗌𝗌𝖺𝗀𝖾)."""
+
     AUTO_MANUAL_TXT = """Help: <b>Filters</b>
 
 <b>Select a filters type Below:</b>"""
@@ -211,14 +236,18 @@ Do as you wish with telegra.ph module!
 • These commands can be used by any group member."""
 
    LOCK_TXT = """Here is the help for the <b>Locks</b> module:
+
 <b>Admin only</b>:
+
 × /lock <permission>: Lock Chat permission..
 × /unlock <permission>: Unlock Chat permission.
 × /locks: View Chat permission.
 × /locktypes: Check available lock types!
+
 Locks can be used to restrict a group's users.
 Locking urls will auto-delete all messages with urls, locking stickers will delete all stickers, etc.
 Locking bots will stop non-admins from adding bots to the chat.
+
 Example:
 /lock media: this locks all the media messages in the chat."""
 
@@ -294,6 +323,14 @@ This module allows you to do that easily, by exposing some common actions, so ev
 • Dhanush should have admin privillage.
 • These commands works on group.
 • These commands can be used by Only admin."""
+
+    IMAGE_TXT = """➤ 𝐇𝐞𝐥𝐩: Iᴍᴀɢᴇ
+
+𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚎𝚍𝚒𝚝 𝚒𝚖𝚊𝚐𝚎 𝚟𝚎𝚛𝚢 𝚎𝚊𝚜𝚒𝚕𝚢 
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
+
+➪ 𝖩𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 𝖺 𝗂𝗆𝖺𝗀𝖾 𝗍𝗈 𝖾𝖽𝗂𝗍 ✨"""
 
     PIN_MESSAGE_TXT = """Help: <b>Pin Message</b>
 

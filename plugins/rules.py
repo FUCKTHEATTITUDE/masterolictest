@@ -10,7 +10,7 @@ from Alita.utils.kbhelpers import ikb
 from Alita.vars import Config
 
 
-@Alita.on_message(command("rules") & filters.group)
+@Alita.on_message(filters.command("rules") & filters.group)
 async def get_rules(_, m: Message):
     db = Rules(m.chat.id)
     msg_id = m.reply_to_message.message_id if m.reply_to_message else m.message_id
@@ -62,7 +62,7 @@ async def get_rules(_, m: Message):
     return
 
 
-@Alita.on_message(command("setrules") & admin_filter)
+@Alita.on_message(filters.command("setrules") & admin_filter)
 async def set_rules(_, m: Message):
     db = Rules(m.chat.id)
     if m and not m.from_user:
@@ -85,8 +85,7 @@ async def set_rules(_, m: Message):
     return
 
 
-@Alita.on_message(
-    command(["pmrules", "privaterules"]) & admin_filter,
+@Alita.on_message(filters.command(["pmrules", "privaterules"]) & admin_filter,
 )
 async def priv_rules(_, m: Message):
     db = Rules(m.chat.id)
@@ -119,7 +118,7 @@ async def priv_rules(_, m: Message):
     return
 
 
-@Alita.on_message(command("clearrules") & admin_filter)
+@Alita.on_message(filters.command("clearrules") & admin_filter)
 async def clear_rules(_, m: Message):
     db = Rules(m.chat.id)
     if m and not m.from_user:

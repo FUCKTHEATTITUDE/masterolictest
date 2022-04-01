@@ -23,7 +23,7 @@ from Alita.utils.parser import mention_html
 from Alita.vars import Config
 
 
-@Alita.on_message(filters.command("warn", "swarn", "dwarn") & restrict_filter & ~filters.incoming & ~filters.edited))
+@Alita.on_message(filters.command("warn", "swarn", "dwarn") & restrict_filter & filters.incoming & ~filters.edited))
 async def warn(c: Alita, m: Message):
     if m.reply_to_message:
         r_id = m.reply_to_message.message_id

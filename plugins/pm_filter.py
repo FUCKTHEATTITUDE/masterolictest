@@ -832,52 +832,48 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('𝘼𝙙𝙢𝙞𝙣', callback_data='admin'),
-            InlineKeyboardButton('𝘾𝙤𝙣𝙣𝙚𝙘𝙩', callback_data='coct'),
-            InlineKeyboardButton('𝙁𝙞𝙡𝙩𝙚𝙧𝙨', callback_data='auto_manual')
-            ],[
+            InlineKeyboardButton('𝘼𝙥𝙥𝙧𝙤𝙫𝙚', callback_data='approve'),
+            InlineKeyboardButton('𝘾𝙤𝙣𝙣𝙚𝙘𝙩', callback_data='coct')
+            
             InlineKeyboardButton('𝘾𝙤𝙫𝙞𝙙', callback_data='covid'),
-            InlineKeyboardButton('𝙂𝙩𝙧𝙖𝙣𝙨', callback_data='gtrans'),
-            InlineKeyboardButton('𝙄𝙣𝙛𝙤', callback_data='info')
+            InlineKeyboardButton('𝙁𝙞𝙡𝙩𝙚𝙧𝙨', callback_data='auto_manual'),
+            InlineKeyboardButton('𝙁𝙪𝙣', callback_data='fun')
             ],[
+            InlineKeyboardButton('𝙂𝙧𝙚𝙚𝙩𝙞𝙣𝙜𝙨', callback_data='welcome'),
+            InlineKeyboardButton('𝙂𝙩𝙧𝙖𝙣𝙨', callback_data='gtrans'),
+            InlineKeyboardButton("𝙄𝙢𝙖𝙜𝙚", callback_data='image')
+            ],[
+            InlineKeyboardButton('𝙄𝙣𝙛𝙤', callback_data='info'),
             InlineKeyboardButton('𝙄𝙣𝙡𝙞𝙣𝙚', callback_data='inline'),
+            InlineKeyboardButton('𝙇𝙤𝙘𝙠𝙨', callback_data='lock')
+            ],[
             InlineKeyboardButton('𝙈𝙚𝙢𝙚𝙨', callback_data='memes'),
-            InlineKeyboardButton('𝙈𝙪𝙨𝙞𝙘', callback_data='music')
+            InlineKeyboardButton('𝙈𝙪𝙨𝙞𝙘', callback_data='music'),
+            InlineKeyboardButton('𝙉𝙤𝙩𝙚𝙨', callback_data='note')
             ],[
             InlineKeyboardButton('𝙋𝙖𝙨𝙨𝙬𝙤𝙧𝙙', callback_data='genpassword'),
             InlineKeyboardButton('𝙋𝙖𝙨𝙩𝙚', callback_data='paste'),
             InlineKeyboardButton('𝙋𝙞𝙣', callback_data='pin')
             ],[
+            InlineKeyboardButton('𝙋𝙞𝙣𝙜', callback_data='pings'),
             InlineKeyboardButton('𝙋𝙪𝙧𝙜𝙚', callback_data='purge'),
-            InlineKeyboardButton('𝙍𝙚𝙨𝙩𝙧𝙞𝙘𝙩', callback_data='restric'),
-            InlineKeyboardButton('𝙎𝙚𝙖𝙧𝙘𝙝', callback_data='search')
+            InlineKeyboardButton('𝙍𝙚𝙨𝙩𝙧𝙞𝙘𝙩', callback_data='restric')
             ],[
-            InlineKeyboardButton('𝙎𝙝𝙖𝙧𝙚 𝙏𝙚𝙭𝙩', callback_data='sharetext'),
+            InlineKeyboardButton('𝙍𝙪𝙡𝙚𝙨', callback_data='rule'),
+            InlineKeyboardButton('𝙎𝙚𝙖𝙧𝙘𝙝', callback_data='search'),
+            InlineKeyboardButton('𝙎𝙝𝙖𝙧𝙚 𝙏𝙚𝙭𝙩', callback_data='sharetext')
+            ],[
             InlineKeyboardButton('𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝙄𝘿', callback_data='stickerid'),
-            InlineKeyboardButton('𝙎𝙪𝙙𝙤', callback_data='admin')
-            ],[
             InlineKeyboardButton('𝙏𝙏𝙎', callback_data='tts'),
-            InlineKeyboardButton('𝙏𝙂𝙧𝙖𝙥𝙝', callback_data='tgraph'),
-            InlineKeyboardButton('𝙏𝙤𝙧𝙧𝙚𝙣𝙩', callback_data='torrent')
+            InlineKeyboardButton('𝙏𝙂𝙧𝙖𝙥𝙝', callback_data='tgraph')
             ],[
-            InlineKeyboardButton("𝙄𝙢𝙖𝙜𝙚", callback_data='image'),
-            InlineKeyboardButton('𝙵𝚞𝚗', callback_data='fun'),
-            InlineKeyboardButton('𝙿𝚒𝚗𝚐', callback_data='pings'),
-            ],[
+            InlineKeyboardButton('𝙏𝙤𝙧𝙧𝙚𝙣𝙩', callback_data='torrent'),
             InlineKeyboardButton('𝙐𝙧𝙡 𝙎𝙝𝙤𝙧𝙩𝙚𝙧', callback_data='shortner'),
-            InlineKeyboardButton('🔰𝙎𝙩𝙖𝙩𝙪𝙨', callback_data='stats'),
-            InlineKeyboardButton('𝙕𝙤𝙢𝙗𝙞𝙚𝙨', callback_data='zombies')
+            InlineKeyboardButton('𝙒𝙖𝙧𝙣𝙨', callback_data='warn')
             ],[
             InlineKeyboardButton('𝙎𝙤𝙪𝙧𝙘𝙚', callback_data='source'),
-            InlineKeyboardButton('« 𝘽𝙖𝙘𝙠', callback_data='start'),
-            InlineKeyboardButton('𝘼𝙗𝙤𝙪𝙩', callback_data='about')
-            ],[
-            InlineKeyboardButton('𝙰𝚙𝚙𝚛𝚘𝚟𝚎', callback_data='approve'),
-            InlineKeyboardButton('𝙶𝚛𝚎𝚎𝚝𝚒𝚗𝚐𝚜', callback_data='welcome'),
-            InlineKeyboardButton('𝙇𝙤𝙘𝙠𝙨', callback_data='lock')
-            ],[
-            InlineKeyboardButton('𝚁𝚞𝚕𝚎𝚜', callback_data='rule'),
-            InlineKeyboardButton('𝙽𝚘𝚝𝚎𝚜', callback_data='note'),
-            InlineKeyboardButton('𝚆𝚊𝚛𝚗', callback_data='warn')
+            InlineKeyboardButton('🔰𝙎𝙩𝙖𝙩𝙪𝙨', callback_data='stats'),
+            InlineKeyboardButton('𝙕𝙤𝙢𝙗𝙞𝙚𝙨', callback_data='zombies')
             ],[
             InlineKeyboardButton('« 𝘽𝙖𝙘𝙠', callback_data='start')
         ]]
@@ -976,7 +972,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.WARN_TXT,
+            text=Script.WARN_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
@@ -998,7 +994,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.LOCK_TXT,
+            text=Script.LOCK_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
@@ -1019,7 +1015,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.RULES_TXT,
+            text=Script.RULES_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
@@ -1089,7 +1085,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.NOTE_TXT,
+            text=Script.NOTE_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
@@ -1122,7 +1118,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.IMAGE_TXT.format(temp.B_NAME),
+            text=Script.IMAGE_TXT.format(temp.B_NAME),
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
@@ -1133,7 +1129,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.PINGS_TXT,
+            text=Script.PINGS_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -1143,7 +1139,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.FUN_TXT,
+            text=Script.FUN_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )

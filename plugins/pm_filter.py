@@ -834,7 +834,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝘼𝙙𝙢𝙞𝙣', callback_data='admin'),
             InlineKeyboardButton('𝘼𝙥𝙥𝙧𝙤𝙫𝙚', callback_data='approve'),
             InlineKeyboardButton('𝘾𝙤𝙣𝙣𝙚𝙘𝙩', callback_data='coct')
-            
+            ],[
             InlineKeyboardButton('𝘾𝙤𝙫𝙞𝙙', callback_data='covid'),
             InlineKeyboardButton('𝙁𝙞𝙡𝙩𝙚𝙧𝙨', callback_data='auto_manual'),
             InlineKeyboardButton('𝙁𝙪𝙣', callback_data='fun')

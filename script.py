@@ -235,7 +235,7 @@ Do as you wish with telegra.ph module!
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
-   LOCK_TXT = """Here is the help for the <b>Locks</b> module:
+    LOCK_TXT = """Here is the help for the <b>Locks</b> module:
 
 <b>Admin only</b>:
 

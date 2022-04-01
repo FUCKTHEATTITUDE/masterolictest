@@ -187,6 +187,23 @@ You can also customise the contents of your message with contextual data. For ex
 <b>𝖴𝗌𝖺𝗀𝖾</b>
 - 𝖢𝗈𝗎𝗅𝖽 𝖻𝖾 𝗎𝗌𝖾𝖽 𝗂𝗇 𝗉𝗆 𝖺𝗇𝖽 𝗀𝗋𝗈𝗎𝗉𝗌."""
 
+    PINGS_TXT ="""<b>🌟 Ping:</b>
+
+Helps you to know your ping 🚶🏼‍♂️
+
+<b>Commands:</b>
+
+• /alive - To check you are alive.
+• /help - To get help 
+• /ping - To get your ping 
+• /repo - Source Code. 
+
+<b>🏹Usage🏹 :</b>
+
+• This commands can be used in pms and groups
+• This commands can be used buy everyone in the groups and bots pm
+• Share us for more features"""
+
     STICKER_TXT ="""Help: <b>StickerID</b>
 
 - It is Used to get the id of the stickers

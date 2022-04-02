@@ -4,6 +4,7 @@ from typing import Optional
 
 import telegram
 from pyrogram import ADMINS, dispatcher
+from database.users_chats_db import db
 from pyrogram.modules.disable import DisableAbleCommandHandler
 from pyrogram.modules.helper_funcs.chat_status import (
     bot_admin,
@@ -14,14 +15,14 @@ from pyrogram.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from pyrogram.modules.helper_funcs.extraction import (
+from pyrogram.modules.users_chats_db import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from pyrogram.modules.helper_funcs.filters import CustomFilters
-from pyrogram.modules.helper_funcs.misc import split_message
-from pyrogram.modules.helper_funcs.string_handling import split_quotes
+from pyrogram.modules.users_chats_db.filters import CustomFilters
+from pyrogram.modules.users_chats_db.misc import split_message
+from pyrogram.modules.users_chats_db.string_handling import split_quotes
 from pyrogram.modules.log_channel import loggable
 from pyrogram.modules.sql import warns_sql as sql
 from telegram import (
@@ -61,10 +62,10 @@ def warn(
 
     if user.id in ADMINS:
         if warner:
-            message.reply_text("Tigers cant be warned.")
+            message.reply_text("owner cant be warned.")
         else:
             message.reply_text(
-                "Tiger triggered an auto warn filter!\n I can't warn tigers but they should avoid abusing this."
+                "owner triggered an auto warn filter!\n I can't warn owner but they should avoid abusing this."
             )
         return
 

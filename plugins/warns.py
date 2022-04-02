@@ -6,6 +6,7 @@ import telegram
 from pyrogram import ADMINS, dispatcher
 from database.users_chats_db import db
 from pyrogram.modules.disable import DisableAbleCommandHandler
+from info import WARNS
 from pyrogram.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
